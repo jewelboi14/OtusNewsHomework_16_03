@@ -11,7 +11,10 @@ import SwiftUI
 struct OtusNewsHomework_16_03App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainSegmentedControlView()
+                .environmentObject(ConfigManager.shared.router)
+            
         }
     }
 }
+
