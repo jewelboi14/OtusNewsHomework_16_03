@@ -16,9 +16,11 @@ struct ArticleListView: View {
     //MARK: - View Properties
     
     var body: some View {
-        List(viewModel.articleList) {
-            let isLastCharacter = viewModel.articleList.isLastItem($0)
-            ArticleCell(article: $0)
+        List(viewModel.articleList) { article in
+            let isLastCharacter = viewModel.articleList.isLastItem(article)
+            NavigationContainerView(transition: .custom(.slide), content:  {
+                ArticleCell(article: article)
+            })
                 .listRowSeparator(.hidden)
                 .onAppear {
                     if isLastCharacter && viewModel.canLoad {

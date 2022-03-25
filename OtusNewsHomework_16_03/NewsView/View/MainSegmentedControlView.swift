@@ -14,7 +14,7 @@ struct MainSegmentedControlView: View {
     @ObservedObject var viewModel = ArticleListViewModel()
     
     //MARK: - View Properties
-    
+     
     var body: some View {
         VStack {
             Picker("News Category", selection: $viewModel.segmentedControlSelection) {
