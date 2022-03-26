@@ -12,8 +12,6 @@ struct OtusNewsHomework_16_03App: App {
     var body: some Scene {
         WindowGroup {
             MainSegmentedControlView()
-                .environmentObject(ConfigManager.shared.router)
-            
         }
     }
 }

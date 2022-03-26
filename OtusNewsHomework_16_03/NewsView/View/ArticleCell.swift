@@ -18,19 +18,29 @@ struct ArticleCell: View {
     var body: some View {
         ZStack(alignment: .center) {
             Rectangle()
-                
                 .frame(width: 345, height: 130, alignment: .center)
                 .background(Color("cellColor"))
                 .foregroundColor(.clear)
                 .cornerRadius(15)
-                .shadow(color:
-                            Color("cellColor")
-                            .opacity(0.4),
-                        radius: 0,
-                        x: 0,
-                        y: 7)
+                
             VStack {
                 HStack {
+                    AsyncImage(url: URL(string: article.urlToImage ?? ""), content: { image in
+                        switch image {
+                        case .success(let image):
+                            image
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                                .cornerRadius(35)
+                        case .empty:
+                            ProgressView()
+                        @unknown default:
+                            Image(systemName: "questionmark.circle")
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                                .cornerRadius(35)
+                        }
+                    })
                     Text(article.title)
                         .foregroundColor(.white)
                     Spacer()

@@ -12,20 +12,22 @@ struct ArticleListView: View {
     //MARK: - Stored Properties
     
     @ObservedObject var viewModel: ArticleListViewModel
+    @EnvironmentObject var routeModel: NavigationContainerViewModel
     
     //MARK: - View Properties
     
     var body: some View {
         List(viewModel.articleList) { article in
             let isLastCharacter = viewModel.articleList.isLastItem(article)
-            NavigationContainerView(transition: .custom(.slide), content:  {
-                ArticleCell(article: article)
-            })
+            ArticleCell(article: article)
                 .listRowSeparator(.hidden)
                 .onAppear {
                     if isLastCharacter && viewModel.canLoad {
                         viewModel.fetchArticles()
                     }
+                }
+                .onTapGesture {
+                    routeModel.push(screenView: LazyView(ArticleDetailView(article: article)).toAnyView())
                 }
         }
         .onAppear {
@@ -34,7 +36,6 @@ struct ArticleListView: View {
         }
         .background(.white)
         .listStyle(.plain)
-        
     }
 }
 
