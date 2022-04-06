@@ -25,6 +25,12 @@ final class ArticleListViewModel: ObservableObject {
     private var page: Int  = 1
     private var totalResults: Int = .max
     
+    //MARK: - Lifecycle
+    
+    init() {
+        networkService = ArticleListNetworkService()
+    }
+    
     //MARK: - Networking Methods
     
     func fetchArticles() {
