@@ -11,6 +11,10 @@
 		8B0262C827E8F6A700CBFB6F /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0262C727E8F6A700CBFB6F /* ArticleListView.swift */; };
 		8B0262CA27E8F6F100CBFB6F /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0262C927E8F6F100CBFB6F /* ArticleListViewModel.swift */; };
 		8B0262CC27E9041F00CBFB6F /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0262CB27E9041F00CBFB6F /* ArticleCell.swift */; };
+		8B1074D027FDB8BC00C88BDE /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1074CF27FDB8BC00C88BDE /* ServiceLocator.swift */; };
+		8B1074D327FDC32900C88BDE /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1074D227FDC32900C88BDE /* URLManager.swift */; };
+		8B1074D527FDC42300C88BDE /* InjectionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1074D427FDC42300C88BDE /* InjectionWrapper.swift */; };
+		8B1074D727FDC44A00C88BDE /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1074D627FDC44A00C88BDE /* Configurator.swift */; };
 		8B5EF1DE27E4DF8C00D0E757 /* OtusNewsHomework_16_03App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF1DD27E4DF8C00D0E757 /* OtusNewsHomework_16_03App.swift */; };
 		8B5EF1E027E4DF8C00D0E757 /* MainSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF1DF27E4DF8C00D0E757 /* MainSegmentedControlView.swift */; };
 		8B5EF1E227E4DF8C00D0E757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EF1E127E4DF8C00D0E757 /* Assets.xcassets */; };
@@ -23,7 +27,7 @@
 		8B5EF1FF27E4E7CF00D0E757 /* NavigationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF1FE27E4E7CF00D0E757 /* NavigationContainerView.swift */; };
 		8B5EF20127E4E8A400D0E757 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF20027E4E8A400D0E757 /* View+Extension.swift */; };
 		8B5EF20427E4E8EF00D0E757 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF20327E4E8EF00D0E757 /* LazyView.swift */; };
-		8B5EF20D27E4ECC100D0E757 /* ArticleListNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkManager.swift */; };
+		8B5EF20D27E4ECC100D0E757 /* ArticleListNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkService.swift */; };
 		8B98EBAD27EDF8F900B9C5E7 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98EBAC27EDF8F900B9C5E7 /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,10 @@
 		8B0262C727E8F6A700CBFB6F /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		8B0262C927E8F6F100CBFB6F /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		8B0262CB27E9041F00CBFB6F /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		8B1074CF27FDB8BC00C88BDE /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		8B1074D227FDC32900C88BDE /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		8B1074D427FDC42300C88BDE /* InjectionWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionWrapper.swift; sourceTree = "<group>"; };
+		8B1074D627FDC44A00C88BDE /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		8B5EF1DA27E4DF8C00D0E757 /* OtusNewsHomework_16_03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusNewsHomework_16_03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5EF1DD27E4DF8C00D0E757 /* OtusNewsHomework_16_03App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusNewsHomework_16_03App.swift; sourceTree = "<group>"; };
 		8B5EF1DF27E4DF8C00D0E757 /* MainSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSegmentedControlView.swift; sourceTree = "<group>"; };
@@ -45,7 +53,7 @@
 		8B5EF1FE27E4E7CF00D0E757 /* NavigationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainerView.swift; sourceTree = "<group>"; };
 		8B5EF20027E4E8A400D0E757 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		8B5EF20327E4E8EF00D0E757 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
-		8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListNetworkManager.swift; sourceTree = "<group>"; };
+		8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListNetworkService.swift; sourceTree = "<group>"; };
 		8B98EBAC27EDF8F900B9C5E7 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1074D127FDC30000C88BDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B5EF20B27E4ECAF00D0E757 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8B5EF1D127E4DF8C00D0E757 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +143,6 @@
 		8B5EF1F027E4E58B00D0E757 /* NewsView */ = {
 			isa = PBXGroup;
 			children = (
-				8B5EF20B27E4ECAF00D0E757 /* NetworkManager */,
 				8B5EF1EF27E4E2D300D0E757 /* View */,
 				8B5EF1EE27E4E2C600D0E757 /* ViewModel */,
 				8B5EF1ED27E4E2AD00D0E757 /* Model */,
@@ -184,6 +199,10 @@
 			children = (
 				8B5EF20527E4E8F700D0E757 /* Extensions */,
 				8B5EF20327E4E8EF00D0E757 /* LazyView.swift */,
+				8B1074CF27FDB8BC00C88BDE /* ServiceLocator.swift */,
+				8B1074D627FDC44A00C88BDE /* Configurator.swift */,
+				8B1074D427FDC42300C88BDE /* InjectionWrapper.swift */,
+				8B1074D127FDC30000C88BDE /* Services */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,12 +216,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		8B5EF20B27E4ECAF00D0E757 /* NetworkManager */ = {
+		8B5EF20B27E4ECAF00D0E757 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkManager.swift */,
+				8B5EF20C27E4ECC100D0E757 /* ArticleListNetworkService.swift */,
+				8B1074D227FDC32900C88BDE /* URLManager.swift */,
 			);
-			path = NetworkManager;
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,14 +303,18 @@
 				87F22A4E27EF26FA0083F30D /* ArticleDetailView.swift in Sources */,
 				8B5EF1EC27E4E29B00D0E757 /* News.swift in Sources */,
 				8B5EF1E027E4DF8C00D0E757 /* MainSegmentedControlView.swift in Sources */,
+				8B1074D727FDC44A00C88BDE /* Configurator.swift in Sources */,
 				8B5EF1DE27E4DF8C00D0E757 /* OtusNewsHomework_16_03App.swift in Sources */,
 				8B5EF1F827E4E63700D0E757 /* NavigationStack.swift in Sources */,
 				8B5EF1FF27E4E7CF00D0E757 /* NavigationContainerView.swift in Sources */,
+				8B1074D327FDC32900C88BDE /* URLManager.swift in Sources */,
 				8B98EBAD27EDF8F900B9C5E7 /* Collection+Extension.swift in Sources */,
 				8B5EF20127E4E8A400D0E757 /* View+Extension.swift in Sources */,
 				8B5EF20427E4E8EF00D0E757 /* LazyView.swift in Sources */,
+				8B1074D527FDC42300C88BDE /* InjectionWrapper.swift in Sources */,
 				8B5EF1F227E4E5AF00D0E757 /* Screen.swift in Sources */,
-				8B5EF20D27E4ECC100D0E757 /* ArticleListNetworkManager.swift in Sources */,
+				8B1074D027FDB8BC00C88BDE /* ServiceLocator.swift in Sources */,
+				8B5EF20D27E4ECC100D0E757 /* ArticleListNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
